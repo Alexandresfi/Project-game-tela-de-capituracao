@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './Components/Footer';
+import Hearder from './Components/Header/Header';
+import Home from './Components/Home';
+import Clash_Cards_Champions from './assets/videonow/Clash_Cards_Champions.mp4'
+import Nav from './Components/Header/Nav/Nav';
+import SideBalls from './Components/SideBall';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <video autoPlay muted loop className="bg_video">
+                <source src={Clash_Cards_Champions} type="video/mp4"/>
+            </video>
+        <Hearder/>
+        <Nav/>
+      <SideBalls/>
+      <div className="container">
+        <Home></Home>
+        <Footer></Footer>
+        
+      </div>
+
+        {/* <Home/>
+
+        <Footer/> */}
+
+        
+            
     </div>
   );
 }
