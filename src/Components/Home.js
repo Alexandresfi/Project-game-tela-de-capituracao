@@ -39,28 +39,25 @@ export default function Home (){
 
     useEffect(()=>{
         startTimer();
-        return ()=>{
-            clearInterval(interval.current);
-        }
+        
+        // return ()=>{
+            
+        //     clearInterval(interval.current);
+        // }
     })
 
     return(
         <Contador>
-            {/* <video autoPlay muted loop className="bg_video">
-                <source src={Clash_Cards_Champions} type="video/mp4"/>
-            </video> */}
-
-            {/* <Nav/> */}
 
             <div className="coluna1">
-                <div className="time hours animate__animated animate__zoomIn">
+                <div className="time hours animate__animated animate__zoomIn animate__delay-1s">
 
                     <p>{timerHours}</p>
 
                      <span>hours</span>
                 </div>
 
-                <div className="time minutes animate__animated animate__zoomIn">
+                <div className="time minutes animate__animated animate__zoomIn animate__delay-1s">
 
                     <p>{timerMinutes}</p>
 
@@ -68,7 +65,7 @@ export default function Home (){
 
                 </div>
 
-                <div className="time seconds animate__animated animate__zoomIn">
+                <div className="time seconds animate__animated animate__zoomIn animate__delay-1s">
 
                     <p>{timerSeconds} </p>
 
