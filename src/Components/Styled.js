@@ -324,6 +324,77 @@ export const Contador = styled.div`
 
 `;
 
+export const ContadorAbout = styled.div`
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 66vw;
+    margin: 10vmin 294px;
+
+    .col1, .col2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .arrow{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 112px;
+        height: 112px;
+        padding: 34px 35px;
+        background-color: transparent;
+    }
+
+   
+
+    .Pe{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+
+        background-color: white;
+        margin-left: auto;
+        margin-top: -62px;
+    }
+
+    .left , .rigth{
+        background: #DCAE4D;
+        width: 38px;
+        height: 53px;
+        img{
+            margin: 20px 15px;
+        }
+    }
+
+    .magic{
+        width: 224px;
+        height: 224px;
+    }
+
+    .Line{
+            width: 1px;
+            height: 336px;
+            margin: auto 64px auto 87px;
+            background-color: #FFFFFF;
+            opacity: 0.9;
+        }
+
+        .NFT{
+            transform: translateY(-28px) translateX(120px);
+        }
+
+`;
+
 export const AreaForm = styled.div`
 
         height: 336px;
@@ -422,6 +493,10 @@ export const AreaForm = styled.div`
             font-weight: normal;
             font-size: 14px;
             line-height: 17px;
+        }
+
+        ul{
+            margin-left: 15px;
         }
 `;
 
