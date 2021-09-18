@@ -511,24 +511,40 @@ export const AreaForm = styled.div`
                 width: 148px;
                 height: 44px;
 
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
                 background-color: #FFFFFF;
                 border: 1px solid #FFFFFF;
                 border-radius: 30px;
-
+                p{
                 color: #1E1A1B;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 14px;
                 line-height: 17px;
+                }
+                .notification{
+                    display: none;
+                    width: 24px;
+                    height: 24px;
+                    
+                }
             }
 
             button:hover{
-                color: #DCAE4D;
-                background-image: url(${Gif2});
+                P{color: #DCAE4D;}
+                
                 background-repeat: no-repeat;
                 background-size: 28px;
                 background-position-x: 10px;
                 background-position-y: center;
+
+                .notification{
+                    display: block;
+                }
             }
 
             input{

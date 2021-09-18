@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Lottie from "react-lottie";
+import animationData from '../../assets/GifAnimation.json'
 import { AreaForm } from '../Styled';
 
 export default function AboutForm() {
+
+    const[animationState, setAnimationState]= useState({
+        isStopped: false, isPaused: false
+    });
+
+    const defaultOptions = {   
+        loop : true, 
+        autoplay : true,  
+        animationData :  animationData,
+        rendererSettings : { 
+          preserveAspectRatio : 'fatia xMidYMid' 
+        }
+      } ;
+
     return (
         <AreaForm>
 
@@ -36,8 +52,18 @@ export default function AboutForm() {
                                         
 
                     <input type="email" name="EMAIL" placeholder="Enter your the best email" />
-                    <button type="submit">Notify Me</button>
+                    <button type="submit">
 
+                        <div  className="notification">
+                            <Lottie options = { defaultOptions } 
+                            altura = { 14 }
+                            largura = { 14 }
+                            isStopped = { animationState.isStopped }
+                            isPaused = { animationState.isPaused } />
+                        </div>
+                        <p>Notify Me</p>
+
+                    </button>
                 </form>
 
             </div>

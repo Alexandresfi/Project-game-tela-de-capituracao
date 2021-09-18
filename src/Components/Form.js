@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import Lottie from "react-lottie";
+import animationData from '../assets/GifAnimation.json'
 import { AreaForm } from "./Styled";
 
 export default function Form (props){
+
+    const[animationState, setAnimationState]= useState({
+        isStopped: false, isPaused: false
+    });
+
+    const defaultOptions = {   
+        loop : true, 
+        autoplay : true,  
+        animationData :  animationData,
+        rendererSettings : { 
+          preserveAspectRatio : 'fatia xMidYMid' 
+        }
+      } ;
+
     return(
         <AreaForm className="animate__animated animate__slideInRight"> 
 
@@ -29,7 +45,18 @@ export default function Form (props){
                 name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
                         <input type="email" name="EMAIL" placeholder="Enter your the best email"/>
-                        <button type="submit">Notify Me</button>
+                        <button type="submit">
+
+                            <div  className="notification">
+                            <Lottie options = { defaultOptions } 
+                                altura = { 14 }
+                                largura = { 14 }
+                                isStopped = { animationState.isStopped }
+                                isPaused = { animationState.isPaused } />
+                            </div>
+                            <p>Notify Me</p>
+
+                        </button>
                 </form>
 
             </div>
