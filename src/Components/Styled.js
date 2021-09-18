@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import MagicDays from '../assets/MagicDays.png'
-import Gif2 from '../assets/Gif.gif'
+
 
 export const Menu = styled.header`
 

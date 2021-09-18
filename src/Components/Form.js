@@ -5,7 +5,7 @@ import { AreaForm } from "./Styled";
 
 export default function Form (props){
 
-    const[animationState, setAnimationState]= useState({
+    const[animationState]= useState({
         isStopped: false, isPaused: false
     });
 
