@@ -12,10 +12,10 @@ export default function Nav (){
         <Navigation>
             <ul>
                 <li>
-                    <div className="anima">
+                    <a href=" https://t.me/ClashCardsChampions" className="anima">
                         <img src={Tele} alt="telegram"/>                    
                         <p>/ClashCardsChampions</p>
-                    </div>
+                    </a>
                 </li>
 
                 <li>
@@ -48,7 +48,7 @@ export default function Nav (){
                         
                         <img src={Youtube} alt="youtube"/>
                         <p>/clashcardschampions</p>
-                        
+
                     </a>
                 </li>
 
