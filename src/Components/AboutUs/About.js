@@ -1,10 +1,10 @@
 import React from 'react';
-import NTF from '../assets/about/NFT.png'
-import ArrowLeft from '../assets/about/ArrowLetf.png'
-import ArrowRigth from '../assets/about/ArrowRigth.png'
-import Magic from '../assets/about/Magic.png'
+import NTF from '../../assets/about/NFT.png'
+import ArrowLeft from '../../assets/about/ArrowLetf.png'
+import ArrowRigth from '../../assets/about/ArrowRigth.png'
+import Magic from '../../assets/about/Magic.png'
 import AboutForm from './AboutForm';
-import { ContadorAbout } from '../Components/Styled';
+import { ContadorAbout } from '../Styled';
 
 export default function About(){
 

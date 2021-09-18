@@ -1,5 +1,5 @@
-import React from "react";
-import { AreaForm } from "../Components/Styled";
+import React from 'react';
+import { AreaForm } from '../Styled';
 
 export default function AboutForm() {
     return (

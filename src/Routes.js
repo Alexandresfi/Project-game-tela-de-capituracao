@@ -5,9 +5,12 @@ import Nav from "./Components/Header/Nav/Nav";
 import SideBalls from "./Components/SideBall";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
+import FooterContact from "./Components/Contact/Footer"
 
 import Clash_Cards_Champions from './assets/videonow/Clash_Cards_Champions.mp4'
-import About from "./AboutUs/About";
+import About from "./Components/AboutUs/About";
+import Contact from './Components/Contact/Contact'
+
 
 
 export default function Rotas (){
@@ -27,13 +30,21 @@ export default function Rotas (){
             <Route exact path="/">
                 
                 <Home/>
+                <Footer/>
             </Route>
 
             <Route exact path="/about">
                 <About/>
+                <Footer/>
             </Route>
 
-            <Footer/>
+
+            <Route exact path="/contact">
+                <Contact/>
+                <FooterContact/>
+            </Route>
+
+            
 
 
 

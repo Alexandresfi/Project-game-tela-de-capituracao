@@ -395,6 +395,78 @@ export const ContadorAbout = styled.div`
 
 `;
 
+export const ContadorContact = styled.div`
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 66vw;
+    margin: 0vmin 294px;
+    
+
+    .col1, .col2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .arrow{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 112px;
+        height: 112px;
+        padding: 34px 35px;
+        background-color: transparent;
+    }
+
+   
+
+    .Pe{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+
+        background-color: white;
+        margin-left: auto;
+        margin-top: -62px;
+    }
+
+    .left , .rigth{
+        background: #DCAE4D;
+        width: 38px;
+        height: 53px;
+        img{
+            margin: 20px 15px;
+        }
+    }
+
+    .magic{
+        width: 224px;
+        height: 224px;
+    }
+
+    .Line{
+            width: 1px;
+            height: 501px;
+            margin: auto 64px auto 87px;
+            background-color: #FFFFFF;
+            opacity: 0.9;
+        }
+
+        .NFT{
+            transform: translateY(-28px) translateX(120px);
+        }
+
+`;
+
 export const AreaForm = styled.div`
 
         height: 336px;
@@ -498,6 +570,109 @@ export const AreaForm = styled.div`
         ul{
             margin-left: 15px;
         }
+`;
+
+export const AreaFormContact = styled.div`
+    height: 501px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .containerLine{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .LineForm{
+        width: 27px;
+        border: 1px solid #FFFFFF;
+        margin: auto 10px;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 414px;
+        height: 323px;
+
+
+        background: transparent;
+
+        .SameThing{
+
+            width: 414px;
+            height: 42px;
+
+            border: 0.3px solid #FFFFFF;
+            border-radius: 30px;
+            outline: none;
+
+            background: transparent;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+
+            outline: none;
+            color: rgba(255, 255, 255, 0.3);
+
+            padding-left: 20px;
+        }
+
+        .SameThing:hover{
+            border: 1px solid #DCAE4D;
+            border-radius: 30px;
+        }
+
+        .Big{
+            height: 124px;
+        }
+
+        button{
+
+            width: 148px;
+            height: 44px;
+            margin-right: auto;
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 13px 48px;
+
+            color: #1E1A1B;
+            background: #FFFFFF;
+            border: 1px solid #FFFFFF;
+            border-radius: 30px;
+        }
+
+}
+
+h1{
+    width: 331px;
+    height: auto;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.pequeno{
+    font-size: 12px;
+    line-height: 15px;
+
+    width: 413px;
+    height: 30px;
+}
+
+
+
 `;
 
 export const Footer = styled.footer`

@@ -16,15 +16,21 @@ export default function Hearder (){
                 <nav>
                     <ul>
                         <li className="teste">
+
                             <Link to="/about">
                                 About us
                                 <div className="subli"/>
                             </Link>
+
                         </li>
                         
                         <li className="teste">
-                            Contact
-                            <div className="subli1"/>
+
+                            <Link to="/contact">
+                                Contact
+                                <div className="subli1"/>
+                            </Link>
+                            
                         </li>
 
                         <li>
