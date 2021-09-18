@@ -8,7 +8,7 @@ export default function ContactForm(){
         
         <div className="containerLine">
                 <div className="LineForm" />
-                <p>Comingo Soon</p>
+                <p>Coming Soon</p>
             </div>
 
 
@@ -22,7 +22,7 @@ export default function ContactForm(){
 
             <form action="https://clashcardschampions.us5.list-manage.com/subscribe/post?u=6943f6e71bf8eb5b548f2b102&amp;id=74b53d7790" 
                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
-                class="validate" target="_blank" novalidate>
+                className="validate" target="_blank" novalidate>
                     
                 <input className="SameThing" type="text" name="FMANE" placeholder="Name"/>
                 <input className="SameThing" type="email" name="EMAIL" placeholder="Email address" />

@@ -311,10 +311,7 @@ export const Contador = styled.div`
         }
 
         .Line{
-            width: 1px;
-            height: 336px;
-            margin: auto 50px auto 50px;
-            background-color: #FFFFFF;
+            margin: auto 50px;
             opacity: 0.9;
         }
 
@@ -381,10 +378,8 @@ export const ContadorAbout = styled.div`
     }
 
     .Line{
-            width: 1px;
-            height: 336px;
-            margin: auto 50px auto 50px;
-            background-color: #FFFFFF;
+            
+            margin: auto 50px;
             opacity: 0.9;
         }
 
@@ -455,10 +450,8 @@ export const ContadorContact = styled.div`
     }
 
     .Line{
-            width: 1px;
             height: 501px;
             margin: auto 50px auto 50px;
-            background-color: #FFFFFF;
             opacity: 0.9;
         }
 

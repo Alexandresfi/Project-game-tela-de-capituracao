@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Form from './Form';
+import Lane from '../assets/Lane.png'
 import { Contador } from './Styled'
 
 
@@ -87,7 +88,7 @@ export default function Home (){
                 </div>
             </div>
 
-            <div className="Line"/>
+            <img src={Lane} alt="linha" className="Line"/>
 
            <Form/>
             

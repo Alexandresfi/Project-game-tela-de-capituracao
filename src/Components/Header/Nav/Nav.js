@@ -20,10 +20,10 @@ export default function Nav (){
 
                 <li>
                     
-                    <a href="https://t.me/ClashCardsChampions" className="anima">
+                    <div className="anima">
                         <img src={Dis} alt="instagram"/>          
                         <p>clashcardschampions</p>
-                    </a>
+                    </div>
 
                 </li>
 
