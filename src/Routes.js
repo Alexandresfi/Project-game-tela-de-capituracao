@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Hearder from "./Components/Header/Header";
 import Nav from "./Components/Header/Nav/Nav";
-import SideBalls from "./Components/SideBall";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import FooterContact from "./Components/Contact/Footer"
@@ -25,7 +24,7 @@ export default function Rotas (){
 
             <Hearder/>
             <Nav/>
-            <SideBalls/>
+            
 
             <Route exact path="/">
                 

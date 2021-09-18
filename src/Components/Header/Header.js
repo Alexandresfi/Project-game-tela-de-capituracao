@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../../assets/Logo.svg'
+import Logo from '../../assets/Logo.png'
 import Vector from '../../assets/Vector.png'
 import { Menu } from '../Styled'
 
@@ -11,7 +11,7 @@ export default function Hearder (){
         <>
             <Menu>
                 <Link to="/">
-                    <img src={Logo} alt="logo"/>
+                    <img src={Logo} alt="logo" width="65px"/>
                 </Link>
                 <nav>
                     <ul>

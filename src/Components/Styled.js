@@ -8,7 +8,7 @@ export const Menu = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 27px;
+    padding: 5px;
     width: 90vw;
     margin: auto;
     
@@ -124,9 +124,7 @@ export const Navigation = styled.nav`
 
                 li{
                     margin-right: auto;
-                    margin-bottom: 37px;
-
-                   
+                    margin-bottom: 37px;                   
 
                     img{margin-right:10px;}
 
@@ -166,7 +164,7 @@ export const Navigation = styled.nav`
                     padding: 4px 8px;
                     animation: Text 0.5s ease-in-out;}
                   p{
-                      display: block; 
+                      display: block;
                   }
                 }
             
@@ -315,7 +313,7 @@ export const Contador = styled.div`
         .Line{
             width: 1px;
             height: 336px;
-            margin: auto 64px auto 87px;
+            margin: auto 50px auto 50px;
             background-color: #FFFFFF;
             opacity: 0.9;
         }
@@ -379,18 +377,20 @@ export const ContadorAbout = styled.div`
     .magic{
         width: 224px;
         height: 224px;
+        margin-top: 106px;
     }
 
     .Line{
             width: 1px;
             height: 336px;
-            margin: auto 64px auto 87px;
+            margin: auto 50px auto 50px;
             background-color: #FFFFFF;
             opacity: 0.9;
         }
 
         .NFT{
             transform: translateY(-28px) translateX(120px);
+            display: none;
         }
 
 `;
@@ -451,18 +451,20 @@ export const ContadorContact = styled.div`
     .magic{
         width: 224px;
         height: 224px;
+        margin-top: 106px;
     }
 
     .Line{
             width: 1px;
             height: 501px;
-            margin: auto 64px auto 87px;
+            margin: auto 50px auto 50px;
             background-color: #FFFFFF;
             opacity: 0.9;
         }
 
         .NFT{
             transform: translateY(-28px) translateX(120px);
+            display: none;
         }
 
 `;

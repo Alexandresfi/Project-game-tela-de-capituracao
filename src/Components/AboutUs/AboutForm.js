@@ -29,9 +29,15 @@ export default function AboutForm() {
 
             <div className="containerForm">
 
-                <form>
-                    <input type="email" name="email" placeholder="Enter your the best email" />
+                <form action="https://clashcardschampions.us5.list-manage.com/subscribe/post?u=6943f6e71bf8eb5b548f2b102&amp;id=74b53d7790"
+                 method="post" 
+                 id="mc-embedded-subscribe-form" 
+                 name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                        
+
+                    <input type="email" name="EMAIL" placeholder="Enter your the best email" />
                     <button type="submit">Notify Me</button>
+
                 </form>
 
             </div>
