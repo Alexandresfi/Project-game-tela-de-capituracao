@@ -44,11 +44,12 @@ export default function Nav (){
                 </li>
 
                 <li>
-                    <div className="anima">
+                    <a href="https://youtube.com/channel/UCOFnT7y7E1uFs1E-JHLRi_Q" className="anima">
+                        
                         <img src={Youtube} alt="youtube"/>
-                    
                         <p>/clashcardschampions</p>
-                    </div>
+                        
+                    </a>
                 </li>
 
             </ul>
