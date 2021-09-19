@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/Logo.png'
-import Vector from '../../assets/Vector.png'
+
 import { Menu } from '../Styled'
 
 
@@ -33,9 +33,6 @@ export default function Hearder (){
                             
                         </li>
 
-                        <li>
-                        <img src={Vector} alt="menu"/>
-                        </li>
                     </ul>
                 </nav>
             </Menu>
