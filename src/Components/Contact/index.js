@@ -6,7 +6,7 @@ import { Container, ContainerAbout, Line } from '../AboutUs/styles';
 
 
 
-export default function Contact() {
+export function Contact() {
     return (
         <Container>
             <ContainerAbout>
@@ -15,6 +15,5 @@ export default function Contact() {
                 <ContactForm />
             </ContainerAbout>
         </Container>
-
     )
 }

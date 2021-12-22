@@ -1,42 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/Logo.png'
+import {
+    Menu,
+    LiHeader,
+    LineAbout,
+    LineContact,
+    UlHeader
+} from './styles'
 
-import { Menu } from '../Styled'
+export default function Hearder() {
+    const [cssAbout, setCssAbout] = useState(false)
+    const [cssContact, setCssContact] = useState(false)
 
+    return (
+        <Menu>
+            <Link to="/">
+                <img src={Logo} alt="logo" width="65px" />
+            </Link>
 
-
-export default function Hearder (){
-    return(
-        <>
-            <Menu>
-                <Link to="/">
-                    <img src={Logo} alt="logo" width="65px"/>
-                </Link>
-                <nav>
-                    <ul>
-                        <li className="teste">
-
-                            <Link to="/about">
-                                About us
-                                <div className="subli"/>
-                            </Link>
-
-                        </li>
-                        
-                        <li className="teste">
-
-                            <Link to="/contact">
-                                Contact
-                                <div className="subli1"/>
-                            </Link>
-                            
-                        </li>
-
-                    </ul>
-                </nav>
-            </Menu>
-
-        </>
+            <nav>
+                <UlHeader>
+                    <LiHeader>
+                        <Link to="/about"
+                            onMouseEnter={() => setCssAbout(true)}
+                            onMouseLeave={() => setCssAbout(false)}>
+                            About us
+                            <LineAbout houver={cssAbout} />
+                        </Link>
+                    </LiHeader>
+                    <LiHeader>
+                        <Link to="/contact"
+                            onMouseEnter={() => setCssContact(true)}
+                            onMouseLeave={() => setCssContact(false)}
+                        >
+                            Contact
+                            <LineContact houver={cssContact} />
+                        </Link>
+                    </LiHeader>
+                </UlHeader>
+            </nav>
+        </Menu>
     )
 }

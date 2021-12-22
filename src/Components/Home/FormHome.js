@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Lottie from "react-lottie";
-import animationData from '../assets/GifAnimation.json'
-import { AreaForm } from "./Styled";
+import animationData from '../../assets/GifAnimation.json'
+import { AreaForm, ButtonForm, ContainerLineForm, H1Container, H3Form, InputForm, LineForm, PSmall,Form } from "../AboutUs/styles";
 
-export default function Form (props){
+
+export function FormHome (){
 
     const[animationState]= useState({
         isStopped: false, isPaused: false
@@ -21,33 +22,35 @@ export default function Form (props){
     return(
         <AreaForm className="animate__animated animate__slideInRight"> 
 
-            <div className="containerLine">
-                <div className="LineForm"/>
+            <ContainerLineForm>
+                <LineForm/>
                 <p>Coming Soon</p>
-            </div>
+            </ContainerLineForm>
             
 
-            <h1>
+            <H1Container>
                 Get Notified
                 When we Launch
-            </h1>
+            </H1Container>
 
-            <p className="pequeno">
+            <PSmall>
                 New Creation. New Culture. New Game. An awesome new company.
                 Our website will be available here soon.
-            </p>
+            </PSmall>
 
-            <div className="containerForm">
 
-            <form action="https://clashcardschampions.us5.list-manage.com/subscribe/post?u=6943f6e71bf8eb5b548f2b102&amp;id=74b53d7790"
+            <Form 
+                action="https://clashcardschampions.us5.list-manage.com/subscribe/post?u=6943f6e71bf8eb5b548f2b102&amp;id=74b53d7790"
                 method="post" 
                 id="mc-embedded-subscribe-form" 
-                name="mc-embedded-subscribe-form" className="validate" target="_blank">
+                name="mc-embedded-subscribe-form" 
+                className="validate" 
+                target="_blank">
 
-                        <input type="email" name="EMAIL" placeholder="Enter your the best email"/>
-                        <button type="submit">
+                        <InputForm type="email" name="EMAIL" placeholder="Enter your the best email"/>
+                        <ButtonForm type="submit">
 
-                            <div  className="notification">
+                            <div>
                             <Lottie options = { defaultOptions } 
                                 altura = { 14 }
                                 largura = { 14 }
@@ -56,13 +59,11 @@ export default function Form (props){
                             </div>
                             <p>Notify Me</p>
 
-                        </button>
-                </form>
-
-            </div>
+                        </ButtonForm>
+                </Form>
 
 
-            <p className="h3">*Hey, don’t worry we will not  spam  you 😁</p>
+            <H3Form>*Hey, don’t worry we will not  spam  you 😁</H3Form>
 
             
 
