@@ -7,8 +7,9 @@ import Footer from "./Components/Footer";
 import FooterContact from "./Components/Contact/Footer"
 
 import Clash_Cards_Champions from './assets/videonow/Clash_Cards_Champions.mp4'
-import About from "./Components/AboutUs/About";
+
 import Contact from './Components/Contact/Contact'
+import { About } from "./Components/AboutUs";
 
 
 
@@ -43,29 +44,7 @@ export default function Rotas (){
                 <FooterContact/>
             </Route>
 
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
-
 
         </Switch>
     )

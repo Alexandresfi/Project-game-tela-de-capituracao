@@ -1,37 +1,50 @@
 import React from "react";
-import { AreaFormContact } from "../Styled";
+import {
+    ButtonForm,
+    ContainerLineForm,
+    LineForm,
+    PSmall
+} from '../AboutUs/styles'
+import {
+    AreaFormContact,
+    FormContact,
+    H1Contact,
+    InputContact
+} from "./styles";
 
-
-export default function ContactForm(){
-    return(
+export default function ContactForm() {
+    return (
         <AreaFormContact>
-        
-        <div className="containerLine">
-                <div className="LineForm" />
+
+            <ContainerLineForm>
+                <LineForm />
                 <p>Coming Soon</p>
-            </div>
+            </ContainerLineForm>
 
-
-            <h1>
+            <H1Contact>
                 Write to us
-            </h1>
+            </H1Contact>
 
-            <p className="pequeno">
+            <PSmall>
                 Need help? Send us a message?
-            </p>
+            </PSmall>
 
-            <form action="https://clashcardschampions.us5.list-manage.com/subscribe/post?u=6943f6e71bf8eb5b548f2b102&amp;id=74b53d7790" 
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
-                className="validate" target="_blank" novalidate>
-                    
-                <input className="SameThing" type="text" name="FMANE" placeholder="Name"/>
-                <input className="SameThing" type="email" name="EMAIL" placeholder="Email address" />
-                <input className="SameThing Big" type="text" name="MESSAGE" placeholder="Message"/>
+            <FormContact
+                action="https://clashcardschampions.us5.list-manage.com/subscribe/post?u=6943f6e71bf8eb5b548f2b102&amp;id=74b53d7790"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                className="validate"
+                target="_blank"
+                novalidate>
 
-                <button type="submit">Submit</button>
-            </form>
-        
-        
+                <InputContact type="text" name="FMANE" placeholder="Name" />
+                <InputContact type="email" name="EMAIL" placeholder="Email address" />
+                <InputContact className="big" type="text" name="MESSAGE" placeholder="Message" />
+
+                <ButtonForm type="submit">Submit</ButtonForm>
+            </FormContact>
+
         </AreaFormContact>
     )
 }

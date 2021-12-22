@@ -14,7 +14,7 @@ export default function Home (){
     let interval = useRef()
 
     const startTimer = () => {
-        const countdouwnDate = new Date("sept 25, 2021 00:00:00").getTime();
+        const countdouwnDate = new Date("sept 25, 2022 00:00:00").getTime();
 
         interval = setInterval(()=>{
             const now = new Date().getTime();
