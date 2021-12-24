@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 
-export const Footer = styled.footer`
+export const LinkFooter = styled.footer`
+    text-align: center;
+    margin-top: -20px;
 
-p{ text-align: center;}
+`;
 
-.circule{
+export const Circule = styled.div`
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -13,11 +15,11 @@ p{ text-align: center;}
 
     transition-property: all;
     transition-timing-function: ease-in;
-    transition-duration: 1s;  
-}
+    transition-duration: 0.5s;  
 
-.circule:hover{
-    width: 8px;
-    height: 8px;
-}
-`;
+    &:hover{
+        width: 8px;
+        height: 8px;
+    }
+`
+

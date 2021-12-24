@@ -1,12 +1,11 @@
 import React from "react";
+import { Circule, LinkFooter } from "../Footer/styles";
 
 export default function FooterContact() {
     return (
-        <footer>
-            <p to="/about" className="footer contact">
-                Contact
-                <div className="circule" />
-            </p>
-        </footer>
+        <LinkFooter>
+            Contact
+            <Circule />
+        </LinkFooter>
     )
 }

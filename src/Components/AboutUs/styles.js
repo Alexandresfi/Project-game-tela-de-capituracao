@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 export const Container = styled.section`
     display: flex;
@@ -13,8 +13,14 @@ export const ContainerAbout = styled.section`
 `
 
 export const ImagNFT = styled.div`
-   transform: translateY(-28px) translateX(120px);
-   margin: 10px 0 0 6vw;
+   transform: translateY(-28px) translateX(130px);
+   margin: 0px 0 -75px 1vw;
+
+   ${ ({Position})=>
+       Position && css`
+       margin: 0px 0 -40px 1vw;
+       `
+    }
 `
 
 export const ContainerCarousel = styled.div`

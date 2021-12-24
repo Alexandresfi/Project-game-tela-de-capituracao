@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NTF from '../../assets/about/NFT.png'
+import NTF from '../../assets/about/NFT.svg'
 import ArrowLeft from '../../assets/about/ArrowLetf.png'
 import ArrowRigth from '../../assets/about/ArrowRigth.png'
 import Magic from '../../assets/about/Magic.png'
@@ -13,6 +13,7 @@ import {
 export function CarouselInitial() {
     const poster = [Magic, Monster];
     const [n, setN] = useState(0)
+    const [position, setPosition] = useState(true)
 
     function carousel() {
         if (n === 0) {
@@ -21,9 +22,17 @@ export function CarouselInitial() {
             setN(0)
         }
     }
+    const route = window.location.pathname
+    
+
+    useState(()=>{
+        route ==='/contact' ? setPosition(true) : setPosition(false)
+    }, [route])
+    
+
     return (
         <div>
-            <ImagNFT>
+            <ImagNFT Position={position} >
                 <img src={NTF} alt="nfc" />
             </ImagNFT>
 
