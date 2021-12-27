@@ -16,6 +16,7 @@ export function MenuMobile({menu}) {
                         <SpanTitle>
                             WELCOME
                         </SpanTitle>
+                        
                         <Link to='/'>
                             <SpanContent>
                                 HOME
@@ -53,7 +54,7 @@ export function MenuMobile({menu}) {
                         <img src={Tele} alt='telegram' />
                     </a>
 
-                    <a href="#">
+                    <a href=' # '>
                         <img src={Dis} alt='discord' />
                     </a>
 
