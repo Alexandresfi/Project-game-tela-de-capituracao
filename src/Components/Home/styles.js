@@ -18,7 +18,6 @@ export const ContainerHome = styled.section`
         margin: auto;
         width: auto;
         width: auto;
-        z-index: -100;
     }
 `
 

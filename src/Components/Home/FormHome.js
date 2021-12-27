@@ -53,7 +53,9 @@ export function FormHome() {
                 name="mc-embedded-subscribe-form"
                 className="validate"
                 target="_blank">
+
                 <InputForm type="email" name="EMAIL" placeholder="Enter your the best email" />
+
                 <ButtonForm type="submit">
                     <div>
                         <Lottie options={defaultOptions}

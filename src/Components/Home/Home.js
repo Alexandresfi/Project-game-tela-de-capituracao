@@ -46,7 +46,7 @@ export function Home() {
 
     useEffect(() => {
         startTimer();
-    })
+    },[timerSeconds])
 
     return (
         <ContainerHome>

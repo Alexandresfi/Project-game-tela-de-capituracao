@@ -31,26 +31,25 @@ export default function Hearder() {
 
             <MenuMobile menu={cssMobile} />
 
-                <UlHeader>
-                    <LiHeader>
-                        <Link to="/about"
-                            onMouseEnter={() => setCssAbout(true)}
-                            onMouseLeave={() => setCssAbout(false)}>
-                            About us
-                            <LineAbout houver={cssAbout} />
-                        </Link>
-                    </LiHeader>
-                    <LiHeader>
-                        <Link to="/contact"
-                            onMouseEnter={() => setCssContact(true)}
-                            onMouseLeave={() => setCssContact(false)}
-                        >
-                            Contact
-                            <LineContact houver={cssContact} />
-                        </Link>
-                    </LiHeader>
-                </UlHeader>
-
+            <UlHeader>
+                <LiHeader>
+                    <Link to="/about"
+                        onMouseEnter={() => setCssAbout(true)}
+                        onMouseLeave={() => setCssAbout(false)}>
+                        About us
+                        <LineAbout houver={cssAbout} />
+                    </Link>
+                </LiHeader>
+                <LiHeader>
+                    <Link to="/contact"
+                        onMouseEnter={() => setCssContact(true)}
+                        onMouseLeave={() => setCssContact(false)}
+                    >
+                        Contact
+                        <LineContact houver={cssContact} />
+                    </Link>
+                </LiHeader>
+            </UlHeader>
         </Menu>
     )
 }

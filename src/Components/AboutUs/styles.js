@@ -185,6 +185,7 @@ export const InputForm = styled.input`
 
     @media (max-width: 806px){
         width: 327px;
+        padding: 10px 2px;
     }
 `
 
@@ -200,6 +201,7 @@ export const ButtonForm = styled.button`
     background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 30px;
+
     @media (max-width: 806px){
         margin-left: 20px;
         width: 193px;

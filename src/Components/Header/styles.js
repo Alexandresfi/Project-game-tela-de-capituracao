@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import Logo from '../../assets/Logo.svg'
 
 export const Menu = styled.header`
     display: flex;
@@ -20,10 +21,12 @@ export const Menu = styled.header`
         display: block;
         width: 100vw;
         margin:0;
+        position: relative;
+        z-index: 100;
         ${(props)=> 
             props.menu && css`
             background-color: rgba(30, 26, 27, 1);
-            opacity: 0.9;
+            opacity: 1;
             `
         }
     }
@@ -50,6 +53,14 @@ export const Menumobile = styled.div`
         height: 89.5vh;
         `
     }
+
+    background-image: url(${Logo});
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 250px;
+    background-position-y: 280px;
+    background-size: 50vh;
+
 `
 
 export const ButtonMobile = styled.div`
