@@ -14,9 +14,45 @@ export const Menu = styled.header`
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+    background: transparent;
+
+    @media(max-width: 806px){
+        display: block;
+        width: 100vw;
+        margin:0;
+        ${(props)=> 
+            props.menu && css`
+            background-color: rgba(30, 26, 27, 1);
+            opacity: 0.9;
+            `
+        }
+    }
+
+`
+export const ContainerNavMobile = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+`
+export const Menumobile = styled.div`
+    height: 1vh;
+    background-color: rgba(30, 26, 27, 1);
+    padding-left: 10px;
+    opacity: 0.9;
+    position: absolute;
+    right: 100vw;
+    transition: ease .2s;
+    ${(props)=> 
+        props.Menu && css`
+        left: 0vw;
+        width: 100vw;
+        height: 89.5vh;
+        `
+    }
 `
 
-export const MenuMobile = styled.div`
+export const ButtonMobile = styled.div`
 display: none;
 
 @media(max-width: 806px){
@@ -57,13 +93,37 @@ display: none;
         }
     }
 
-
-    ${(props)=> 
-        props.menu && css`
-        color: transparent;
-        `
-    } 
 }
+`
+
+export const LiMobile = styled.li`
+    display: flex;
+    flex-direction: column;
+`
+export const SpanTitle = styled.span`
+    height: 15px;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 15px;
+`
+
+export const SpanContent = styled.span`
+height: 44px;
+
+font-weight: bold;
+font-size: 36px;
+line-height: 44px;
+
+background: -webkit-linear-gradient(left, rgba(244, 44, 44, 0.526) 0%, rgba(220, 174, 77, 1) 100%);
+background: -webkit-linear-gradient(to right, rgba(220, 174, 77, 1) 0%, rgba(30, 26, 27, 1) 100%);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+`
+export const ContainerImg = styled.div`
+margin-top: 20px;
+display: flex;
+justify-content: space-evenly;
 
 `
 
@@ -78,6 +138,7 @@ export const LiHeader = styled.li`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90px;
 
     &:hover{
         cursor: pointer;

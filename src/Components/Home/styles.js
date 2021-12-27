@@ -6,6 +6,7 @@ export const ContainerHome = styled.section`
     justify-content: center;
     width: 66vw;
     margin: 10vmin 294px;
+    position: relative;
 
     @media (max-width: 1027px){
         margin: 10vmin 147px;
@@ -17,6 +18,7 @@ export const ContainerHome = styled.section`
         margin: auto;
         width: auto;
         width: auto;
+        z-index: -100;
     }
 `
 
@@ -46,7 +48,6 @@ export const Container= styled.div`
         background-color: #DCAE4D;
         color: #FFFFFF;
         grid-row: 3;
-        
     }
 
     @media (max-width: 806px){
@@ -64,7 +65,6 @@ export const Container= styled.div`
         .seconds{
             grid-row: 2/2;
         }
-
     }
 `
 

@@ -13,7 +13,7 @@ export function Nav() {
         <ContainerNav>
             <UlNav>
                 <li>
-                    <LinkAnimation href=" https://t.me/ClashCardsChampions">
+                    <LinkAnimation href="https://t.me/ClashCardsChampions">
                         <img src={Tele} alt="telegram" />
                         <PNav>/ClashCardsChampions</PNav>
                     </LinkAnimation>
@@ -27,7 +27,7 @@ export function Nav() {
                 </li>
 
                 <li>
-                    <LinkAnimation href=" https://twitter.com/ClashCards">
+                    <LinkAnimation href="https://twitter.com/ClashCards">
                         <img src={Twiter} alt="twiter" />
                         <PNav>/clashcardschampions</PNav>
                     </LinkAnimation>

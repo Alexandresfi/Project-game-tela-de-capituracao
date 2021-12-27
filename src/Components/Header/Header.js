@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/Logo.png'
+import { MenuMobile } from './MenuMobile'
 import {
     Menu,
     LiHeader,
     LineAbout,
     LineContact,
     UlHeader,
-    MenuMobile
+    ButtonMobile,
+    ContainerNavMobile,
 } from './styles'
 
 export default function Hearder() {
@@ -17,12 +19,18 @@ export default function Hearder() {
 
 
     return (
-        <Menu>
-            <Link to="/">
-                <img src={Logo} alt="logo" width="65px" />
-            </Link>
+        <Menu menu={cssMobile} >
 
-            <nav>
+            <ContainerNavMobile>
+                <Link to="/">
+                    <img src={Logo} alt="logo" width="65px" />
+                </Link>
+
+                <ButtonMobile onClick={() => { setCssMobile(!cssMobile) }} menu={cssMobile} />
+            </ContainerNavMobile>
+
+            <MenuMobile menu={cssMobile} />
+
                 <UlHeader>
                     <LiHeader>
                         <Link to="/about"
@@ -42,8 +50,7 @@ export default function Hearder() {
                         </Link>
                     </LiHeader>
                 </UlHeader>
-            </nav>
-            <MenuMobile onClick={() => {setCssMobile(!cssMobile)}} menu={cssMobile}/>
+
         </Menu>
     )
 }

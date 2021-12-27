@@ -10,8 +10,6 @@ import {
     LineHome
 } from './styles';
 
-
-
 export function Home() {
 
     const [timerDays, setTimerDays] = useState("00")
@@ -48,11 +46,6 @@ export function Home() {
 
     useEffect(() => {
         startTimer();
-
-        // return ()=>{
-
-        //     clearInterval(interval.current);
-        // }
     })
 
     return (
