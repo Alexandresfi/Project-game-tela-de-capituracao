@@ -44,7 +44,7 @@ export default function ContactForm() {
 
                 <ButtonForm type="submit">Submit</ButtonForm>
             </FormContact>
-
+            
         </AreaFormContact>
     )
 }

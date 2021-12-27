@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NTF from '../../assets/about/NFT.svg'
 import ArrowLeft from '../../assets/about/ArrowLetf.png'
 import ArrowRigth from '../../assets/about/ArrowRigth.png'
@@ -25,7 +25,7 @@ export function CarouselInitial() {
     const route = window.location.pathname
     
 
-    useState(()=>{
+    useEffect(()=>{
         route ==='/contact' ? setPosition(true) : setPosition(false)
     }, [route])
     

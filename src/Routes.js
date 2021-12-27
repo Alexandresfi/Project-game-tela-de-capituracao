@@ -3,11 +3,10 @@ import { Route, Switch } from "react-router-dom"
 import Hearder from "./Components/Header/Header"
 
 import { Home } from "./Components/Home/Home";
-import FooterContact from "./Components/Contact/Footer"
 import { Contact } from './Components/Contact'
 import { About } from "./Components/AboutUs"
 import { Nav } from "./Components/Nav"
-import { Footer } from './Components/Footer'
+
 import { Video } from "./Components/Video";
 
 
@@ -26,17 +25,16 @@ export default function Rotas() {
 
                 <Route exact path="/">
                     <Home />
-                    <Footer />
+                    
                 </Route>
 
                 <Route exact path="/about">
                     <About />
-                    <Footer />
+                    
                 </Route>
 
                 <Route exact path="/contact">
                     <Contact />
-                    <FooterContact />
                 </Route>
 
             </div>

@@ -6,12 +6,15 @@ import {
     LiHeader,
     LineAbout,
     LineContact,
-    UlHeader
+    UlHeader,
+    MenuMobile
 } from './styles'
 
 export default function Hearder() {
     const [cssAbout, setCssAbout] = useState(false)
     const [cssContact, setCssContact] = useState(false)
+    const [cssMobile, setCssMobile] = useState(false)
+
 
     return (
         <Menu>
@@ -40,6 +43,7 @@ export default function Hearder() {
                     </LiHeader>
                 </UlHeader>
             </nav>
+            <MenuMobile onClick={() => {setCssMobile(!cssMobile)}} menu={cssMobile}/>
         </Menu>
     )
 }

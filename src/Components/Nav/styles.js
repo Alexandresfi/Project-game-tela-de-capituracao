@@ -9,6 +9,9 @@ export const ContainerNav = styled.nav`
 
     margin: 12vh 199px 194px 7vmax;
     width: 175px;
+    @media (max-width: 1027px){
+        display: none;
+}
 ` 
 
 export const UlNav = styled.ul`

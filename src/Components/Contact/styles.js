@@ -6,6 +6,9 @@ export const AreaFormContact = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media(max-width: 806px){
+        height: 370px;
+    }
 `
 
 export const FormContact = styled.form`
@@ -19,7 +22,11 @@ export const FormContact = styled.form`
 
     .big{
         height: 124px;
+        @media(max-width: 806px){
+            height: 80px;
+        }
     }
+
 `
 
 export const InputContact = styled.input`
@@ -47,6 +54,11 @@ export const InputContact = styled.input`
         border-radius: 30px;
     }
 
+    @media(max-width: 806px){
+        width: 376px;
+        margin: 0 auto;
+    }
+
 `
 
 export const ButtonContact = styled.button`
@@ -63,6 +75,7 @@ export const ButtonContact = styled.button`
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 30px;
+        
 `
 
 export const H1Contact = styled.h1`
@@ -75,4 +88,8 @@ line-height: 44px;
 margin: 9px 0 17px 0;
 
 color: #FFFFFF;
+
+@media (max-width: 806px){
+    margin-left: 10px;
+}
 `

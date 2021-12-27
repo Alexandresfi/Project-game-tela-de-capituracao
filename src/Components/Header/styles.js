@@ -16,6 +16,57 @@ export const Menu = styled.header`
     color: #FFFFFF;
 `
 
+export const MenuMobile = styled.div`
+display: none;
+
+@media(max-width: 806px){
+    display: block;
+    width: 47px;
+    border-top: 4px solid;
+    transition: .3s;
+    color: transparent;
+
+    &::after{
+        content: '';
+        display: block;
+        width: 47px;
+        height: 4px;
+        margin-top: 5px;
+        background-color: #FFFF;
+        ${(props)=> 
+            props.menu && css`
+            transform: rotate(-135deg);
+            position: relative;
+            top: -7px;
+            `
+        }
+    }
+
+    &::before{
+        content: '';
+        display: block;
+        width: 47px;
+        height: 4px;
+        margin-top: 5px;
+        background-color: #FFFF;
+
+        ${(props)=> 
+            props.menu && css`
+            transform: rotate(135deg);;
+            `
+        }
+    }
+
+
+    ${(props)=> 
+        props.menu && css`
+        color: transparent;
+        `
+    } 
+}
+
+`
+
 export const UlHeader = styled.ul`
     display: flex;
     list-style: none;
@@ -30,6 +81,10 @@ export const LiHeader = styled.li`
 
     &:hover{
         cursor: pointer;
+    }
+
+    @media(max-width: 806px){
+        display: none;
     }
 `
 

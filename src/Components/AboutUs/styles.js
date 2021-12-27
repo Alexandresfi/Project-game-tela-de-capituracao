@@ -5,11 +5,19 @@ export const Container = styled.section`
     align-items: flex-end;
     justify-content: center;
     margin: 10vmin 294px;
+
+    @media(max-width: 806px){
+        margin: 0;
+        justify-content: start;
+    }
 `
 export const ContainerAbout = styled.section`
     display: flex;
     justify-content: space-evenly;
     width: 60vw;
+    @media(max-width: 806px){
+        flex-direction: column;
+    }
 `
 
 export const ImagNFT = styled.div`
@@ -21,17 +29,27 @@ export const ImagNFT = styled.div`
        margin: 0px 0 -40px 1vw;
        `
     }
+
+    @media(max-width: 806px){
+        display: none;
+    }
 `
 
 export const ContainerCarousel = styled.div`
     display: flex;
     justify-content: center;
     background-color: transparent;
+    @media(max-width: 806px){
+       margin: 34px auto 17px auto;
+    }
 `
 
 export const Line = styled.img`
     margin: 0 2vw;
     opacity: 0.9;
+    @media(max-width: 806px){
+        display: none;
+    }
 `
 
 export const ArrowCarousel = styled.div`
@@ -43,6 +61,10 @@ export const ArrowCarousel = styled.div`
 
     img{
         margin: 20px 15px;
+    }
+
+    @media(max-width: 806px){
+        margin-left: 150px;
     }
 `
 
@@ -58,6 +80,17 @@ export const AreaForm = styled.div`
     ul{
         margin-left: 15px;
     }
+
+    @media (max-width: 806px){
+
+        justify-content: start;
+
+        ul{
+            margin-top: 30px;
+            margin-left: 25px;
+        }
+    }
+
 `
 
 export const ContainerLineForm = styled.div`
@@ -66,6 +99,11 @@ export const ContainerLineForm = styled.div`
     align-items: center;
     font-size: 12px;
     line-height: 15px;
+
+    @media(max-width: 806px){
+        
+    }
+
 `
 
 export const H1Container = styled.h1`
@@ -73,6 +111,10 @@ export const H1Container = styled.h1`
     height: auto;
     font-size: 36px;
     line-height: 44px;
+
+    @media (max-width: 806px){
+        margin: 9px 9px;
+    }
 `
 
 export const PSmall = styled.p`
@@ -81,6 +123,11 @@ export const PSmall = styled.p`
 
     width: 413px;
     height: 30px;
+
+    @media (max-width: 806px){
+        margin: 0 0 0 9px;
+        width: 400px;
+    }
 `
 
 export const H3Form = styled.p`
@@ -88,6 +135,10 @@ export const H3Form = styled.p`
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
+    @media(max-width: 806px){
+        margin-left: 9px;
+        width: 299px;
+    }
 `
 
 export const LineForm = styled.div`
@@ -111,6 +162,11 @@ export const Form = styled.form`
 
     background: transparent;
 
+    @media (max-width: 806px){
+        width: 327px;
+        margin: 23px 44px;
+    }
+
 `
 
 export const InputForm = styled.input`
@@ -127,6 +183,9 @@ export const InputForm = styled.input`
 
     padding-left: 20px;
 
+    @media (max-width: 806px){
+        width: 327px;
+    }
 `
 
 export const ButtonForm = styled.button`
@@ -141,6 +200,10 @@ export const ButtonForm = styled.button`
     background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 30px;
+    @media (max-width: 806px){
+        margin-left: 20px;
+        width: 193px;
+    }
 
     p{
         color: #1E1A1B;

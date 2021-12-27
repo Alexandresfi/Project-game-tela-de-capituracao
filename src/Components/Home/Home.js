@@ -6,8 +6,7 @@ import {
     ContainerHome,
     ContainerCounter, 
     SpanCounter, 
-    PCounter, 
-    NoImg, 
+    PCounter,
     LineHome
 } from './styles';
 
@@ -73,15 +72,14 @@ export function Home() {
                     <PCounter>{timerSeconds} </PCounter>
                     <SpanCounter>seconds</SpanCounter>
                 </ContainerCounter>
-            </Container>
 
-            <Container>
-                <NoImg />
                 <ContainerCounter className="days">
                     <PCounter>{timerDays}</PCounter>
                     <SpanCounter>days</SpanCounter>
                 </ContainerCounter>
+
             </Container>
+
             <LineHome src={Lane} alt="linha" />
             <FormHome />
         </ContainerHome>

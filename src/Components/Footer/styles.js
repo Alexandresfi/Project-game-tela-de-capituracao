@@ -1,9 +1,17 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const LinkFooter = styled.footer`
     text-align: center;
-    margin-top: -20px;
-
+    
+    @media (max-width: 806px){
+        margin-top: -20px;
+        ${(Position)=> 
+            Position && css`
+            height: 50px;
+            margin: 2px 0 23px 0;
+            `
+        }
+    }
 `;
 
 export const Circule = styled.div`
@@ -21,5 +29,6 @@ export const Circule = styled.div`
         width: 8px;
         height: 8px;
     }
+
 `
 
